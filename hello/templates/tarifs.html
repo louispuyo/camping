@@ -1,3 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+    
+
+
 <!DOCTYPE html>
 <!--
 	Camping Courtilles du Lido by TEMPLATE STOCK
@@ -32,7 +40,6 @@
     <body data-spy="scroll" data-target=".navbar" data-offset="80">
 
 
-        <!-- Static navbar -->
         <nav class="navbar navbar-default navbar-fixed-top before-color">
             <div class="container">
                 <div class="navbar-header">
@@ -42,24 +49,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand alo" href="index.html">Camping Courtilles du Lido</a>
+                    <a class="navbar-brand alo" href="/index.html">Camping Courtilles Du Lido</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right scroll-to">
-                        <li><a href="index.html#home">Home</a></li>
-                        <li><a href="index.html#about">About</a></li>
-                        <li><a href="index.html#services">Nos Activitées</a></li>
-                        <li><a href="index.html#work">Work</a></li>
-                        <li><a href="#Avis">Avis</a></li>                      
-                        <li class="dropdown active">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Pages <span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="typography.html">Typography</a></li>
-                                <li><a href="post-single.html">Avis Post</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="index.html#contact">Contact</a></li>
-
+                        <li class="active"><a href="/index.html#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                      
                     </ul>
                 </div><!--/.nav-collapse -->
             </div><!--/.container-fluid -->
@@ -67,59 +63,80 @@
 
         <div class="page-title">
             <div class="container text-center">
-                <h3>Typography</h3>
+                <h3>Tarifs</h3>
                 <span class="border-line"></span>
             </div>
         </div><!--page title-->
-        
         <div class="container section-padding">
-            <div class="margin-bottom30">
-                <h1>H1 Heading</h1>
-                <p>
-                    Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                </p>
-            </div><!--heading div-->
-             <div class="margin-bottom30">
-                <h2>H2 Heading</h2>
-                <p>
-                    Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                </p>
-            </div><!--heading div-->
-             <div class="margin-bottom30">
-                <h3>H3 Heading</h3>
-                <p>
-                    Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                </p>
-            </div><!--heading div-->
-             <div class="margin-bottom30">
-                <h4>H4 Heading</h4>
-                <p>
-                    Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                </p>
-            </div><!--heading div-->
-             <div class="margin-bottom30">
-                <h5>H5 Heading</h5>
-                <p>
-                    Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                </p>
-            </div><!--heading div-->
-             <div class="margin-bottom30">
-                <h6>H6 Heading</h6>
-                <p>
-                    Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                </p>
-            </div><!--heading div-->
+            <table class="colored-text" id="pricepitch">
+                <thead>
+                    <tr>
+                        <th colspan="2" class="pricetitle">Tarifs des emplacements camping</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2" class="grey subpricetitle">Emplacements loués de 14h00 à 12h00 du 17 avril au 02 octobre
+                            2021</td>
+                    </tr>
+                    <tr>
+                        <td width="500px" class="libelle">Adulte</td>
+                        <td width="150px">5,00 €</td>
+                    </tr>
+                    <tr class="grey">
+                        <td class="libelle">Enfant jusqu'à 14 ans</td>
+                        <td>4,00 €</td>
+                    </tr>
+                    <tr>
+                        <td class="libelle">Emplacement tente (6 personnes maxi non inclus)</td>
+                        <td>7,00 €</td>
+                    </tr>
+                    <tr class="grey">
+                        <td class="libelle">Emplacement caravane</td>
+                        <td>7,00 €</td>
+                    </tr>
+                    <tr>
+                        <td class="libelle">Camping-car</td>
+                        <td>10,00 €</td>
+                    </tr>
+                    <tr class="grey">
+                        <td class="libelle">Branchement électrique (10 Ampères)</td>
+                        <td>4,00 €</td>
+                    </tr>
+                    <tr>
+                        <td class="libelle">Véhicule ou moto</td>
+                        <td>3,00 €</td>
+                    </tr>
+                    <tr class="grey">
+                        <td class="libelle">Animal (chiens 1ère et 2ème catégorie non acceptés)</td>
+                        <td>2,00 €</td>
+                    </tr>
+                    <tr class="grey">
+                        <td class="libelle">Camping-car (service de passage)</td>
+                        <td>10,00 €</td>
+                    </tr>
+                    <tr>
+                        <td class="libelle">Caution carte d'accès</td>
+                        <td>20,00 €</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2" class="grey"><span class="big orange">Emplacement payable à l'arrivée. Réservation
+                                conseillée en haute saison</span></td>
+                    </tr>
+                </tfoot>
+            </table>
         </div>
+        <!--heading div-->
 
         <footer class="footer">
             <div class="container text-center">
-                <span class="alo">Camping Courtilles du Lido</span>
                 <ul class="social list-inline">
                     <li><a href="#"><i class="icon icon-social-twitter"></i></a></li>
                     <li><a href="#"><i class="icon icon-social-facebook"></i></a></li>
                     <li><a href="#"><i class="icon icon-social-dribbble"></i></a></li>
                 </ul>
-                <span class="copyright">&copy; Camping Courtilles du Lido </span>
             </div>
         </footer>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -140,3 +157,4 @@
 
     </body>
 </html>
+{% endblock %}

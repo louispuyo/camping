@@ -21,3 +21,11 @@ def db(request):
 
 def post(request):
     return render(request, "post-single.html")
+
+
+def tarifs(request):
+    return render(request, "tarifs.html")
+
+
+def contact(request):
+    return render(request, "contact.html")
