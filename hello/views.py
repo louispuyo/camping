@@ -32,5 +32,10 @@ def tarif_grid(request):
 
 
 
-def photos(request):
-    return render(request, "photos.html")
+def menu_photo(request):
+    return render(request, "menu_photo.html")
+
+
+
+def photo(request):
+    return render(request, "photo.html")

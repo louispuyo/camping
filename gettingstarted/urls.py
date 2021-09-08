@@ -22,5 +22,7 @@ urlpatterns = [
     path('location_crash_pad', hello.views.location_crash),
     path('tarifs/', hello.views.tarifs, name="tarifs"),
     path('contact/', hello.views.tarif_grid, name="tarifs_grid"),
-    path('photos', hello.views.photos, name="photos")
+    path('menu_photo', hello.views.menu_photo, name="menu_photo"),
+    path('photo', hello.views.photo, name="photo"),
+
 ]
