@@ -19,13 +19,18 @@ def db(request):
     return render(request, "db.html", {"greetings": greetings})
 
 
-def post(request):
-    return render(request, "post-single.html")
+def location_crash(request):
+    return render(request, "location_crash_pad.html")
 
 
 def tarifs(request):
     return render(request, "tarifs.html")
 
 
-def contact(request):
-    return render(request, "contact.html")
+def tarif_grid(request):
+    return render(request, "tarif_grid.html")
+
+
+
+def photos(request):
+    return render(request, "photos.html")

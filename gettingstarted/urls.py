@@ -19,7 +19,8 @@ urlpatterns = [
     path("index.html", hello.views.index, name="index"),
     path("db/", hello.views.db, name="db"),
     path("admin/", admin.site.urls),
-    path('post-single.html', hello.views.post),
+    path('location_crash_pad', hello.views.location_crash),
     path('tarifs/', hello.views.tarifs, name="tarifs"),
-    path('contact/', hello.views.contact, name="contact")
+    path('contact/', hello.views.tarif_grid, name="tarifs_grid"),
+    path('photos', hello.views.photos, name="photos")
 ]

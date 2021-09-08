@@ -17,19 +17,19 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Camping Courtilles du Lido Free HTML5 Responsive Template | Template Stock</title>
-        
+        <meta name="viewport" content="width=device-width" initial-scale=1> 
+        <title>Camping Courtilles Du Lido</title>
+
         <!-- Bootstrap -->
-        <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="static/css/style.css" rel="stylesheet" type="text/css">
-        <link href="static/css/flexslider.css" rel="stylesheet" type="text/css">
-        <link href="static/icons/css/ionicons.min.css" rel="stylesheet" type="text/css">
-        <link href="static/icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
-        
+        <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'css/style.css' %} "rel="stylesheet" type="text/css">
+        <link href="{% static 'css/flexslider.css' %} "rel="stylesheet" type="text/css">
+        <link href="{% static 'icons/css/ionicons.min.css' %} "rel="stylesheet" type="text/css">
+        <link href="{% static 'icons/css/simple-line-icons.css' %} "rel="stylesheet" type="text/css">
+       
         <!--revolution slider setting css-->
-        <link href="static/rs-plugin/css/settings.css" rel="stylesheet">
-        <link href="static/css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+        <link href="{% static 'rs-plugin/css/settings.css' %}" rel="stylesheet">
+        <link href="{% static 'css/prettyPhoto.css' %} "rel="stylesheet" type="text/css" />
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -54,7 +54,7 @@
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right scroll-to">
                         <li class="active"><a href="/index.html#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
+                   
                       
                     </ul>
                 </div><!--/.nav-collapse -->
@@ -63,71 +63,321 @@
 
         <div class="page-title">
             <div class="container text-center">
-                <h3>Tarifs</h3>
+                <h3><t></t>Tarifs</h3>
                 <span class="border-line"></span>
             </div>
         </div><!--page title-->
-        <div class="container section-padding">
-            <table class="colored-text" id="pricepitch">
-                <thead>
-                    <tr>
-                        <th colspan="2" class="pricetitle">Tarifs des emplacements camping</th>
-                    </tr>
-                </thead>
+        <div class="pricing">
+            <div class="container">
+              <div class="pricing-table table-responsive">
+    
+            <table class="pricing">
+             <thead>
+                <tr>
+                  <th>&nbsp;</th>
+                  <th>
+                    Free
+                    <span class="ptable-star red">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-half-o"></i>
+                      <i class="fa fa-star-o"></i>
+                    </span>
+                    <span class="ptable-price">$0.0</span>
+                  </th>
+                  <th class="highlight">
+                    Basic
+                    <span class="ptable-star green">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-o"></i>
+                    </span>
+                    <span class="ptable-price">$99.0</span>
+                  </th>
+                  <th>
+                    Business
+                    <span class="ptable-star lblue">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </span>
+                    <span class="ptable-price">$149.0</span>
+                  </th>
+                </tr>
+              </thead>
                 <tbody>
                     <tr>
-                        <td colspan="2" class="grey subpricetitle">Emplacements loués de 14h00 à 12h00 du 17 avril au 02 octobre
+                        <td colspan="2">Emplacements loués de 14h00 à 12h00 du 17 avril au 02 octobre
                             2021</td>
                     </tr>
                     <tr>
-                        <td width="500px" class="libelle">Adulte</td>
-                        <td width="150px">5,00 €</td>
+                        <td  >Adulte</td>
+                        <td class="ptable-price">
+                        <span class="ptable-price">
+                                5,00 €
+
+                            </span>
+                        </td>
                     </tr>
-                    <tr class="grey">
-                        <td class="libelle">Enfant jusqu'à 14 ans</td>
-                        <td>4,00 €</td>
-                    </tr>
-                    <tr>
-                        <td class="libelle">Emplacement tente (6 personnes maxi non inclus)</td>
-                        <td>7,00 €</td>
-                    </tr>
-                    <tr class="grey">
-                        <td class="libelle">Emplacement caravane</td>
-                        <td>7,00 €</td>
-                    </tr>
-                    <tr>
-                        <td class="libelle">Camping-car</td>
-                        <td>10,00 €</td>
-                    </tr>
-                    <tr class="grey">
-                        <td class="libelle">Branchement électrique (10 Ampères)</td>
-                        <td>4,00 €</td>
+                    <tr ">
+                        <td >Enfant jusqu'à 14 ans</td>
+                        <td class="ptable-price">
+                            <span class="ptable-price">
+                                4,00 €
+
+                            </span>
+                        </td>
                     </tr>
                     <tr>
-                        <td class="libelle">Véhicule ou moto</td>
-                        <td>3,00 €</td>
+                        <td >Emplacement tente (6 personnes maxi non inclus)</td>
+                        <td class="ptable-price">
+                            <span class="ptable-price">
+                                7,00 €
+
+                            </span>
+                        </td>
                     </tr>
-                    <tr class="grey">
-                        <td class="libelle">Animal (chiens 1ère et 2ème catégorie non acceptés)</td>
-                        <td>2,00 €</td>
-                    </tr>
-                    <tr class="grey">
-                        <td class="libelle">Camping-car (service de passage)</td>
-                        <td>10,00 €</td>
+                    <tr >
+                        <td class="ptable-title" >Emplacement caravane</td>
+                        <td class="ptable-price">
+                            <span class="ptable-price">
+                                7,00 €
+
+                            </span>
+                        </td>
                     </tr>
                     <tr>
-                        <td class="libelle">Caution carte d'accès</td>
-                        <td>20,00 €</td>
+                        <td >Camping-car</td>
+                        <td class="ptable-price">
+                            <span class="ptable-price">
+                                10,00 €
+
+                            </span>
+                        </td>
+                    </tr>
+                    <tr >
+                        <td class="ptable-title" >Branchement électrique (10 Ampères)</td>
+                        <td>
+                            <span class="ptable-price">
+                                4,00 €
+
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="ptable-title">Véhicule ou moto</td>
+                        <td class="ptable-price">
+                            <span class="ptable-price">
+                                3,00 €
+
+                            </span>
+                        </td>
+                    </tr>
+                    <tr >
+                        <td class="ptable-title" >Animal (chiens 1ère et 2ème catégorie non acceptés)</td>
+                        <td class="ptable-price">2,00 €
+                            <span class="ptable-price">
+
+                            </span>
+                        </td>
+                    </tr>
+                    <tr >
+                        <td class="ptable-title" >Camping-car (service de passage)</td>
+                        <td class="ptable-price">10,00 €
+                            <span class="ptable-price">
+
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >Caution carte d'accès</td>
+                        <td class="ptable-price">20,00 €
+                            <span class="ptable-price">
+
+                            </span>
+                        </td>
                     </tr>
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="2" class="grey"><span class="big orange">Emplacement payable à l'arrivée. Réservation
+                        <td colspan="2" ><span ">Emplacement payable à l'arrivée. Réservation
                                 conseillée en haute saison</span></td>
                     </tr>
                 </tfoot>
             </table>
-        </div>
+       
+    </div>
+</div>
+</div>
+
+<div class="news-wrapper  container-fluid">
+    <div class='row'>
+    <div class="col-sm-6 text-center no-padding">
+        <a class="news-inner" href="post-single.html" style="background:url('static/images/camping/photo  (23).jpeg') no-repeat; background-size: cover;">
+            <div class="post-overlay"></div>
+            <div class="post-preview-content">
+                <h4 class="date">24 April, 2021</h4>
+                <h2 class="title">Mobil-home </h2>
+                <span class="border-line"></span>
+                <p class="author">By Severine</p>
+            </div>
+        </a>
+    </div><!--news col-->
+    <div class="col-sm-6 text-center no-padding">
+        <a class="news-inner" href="post-single.html" style="background:url('static/images/camping/photo  (12).jpeg') no-repeat; background-size: cover;">
+            <div class="post-overlay"></div>
+            <div class="post-preview-content">
+                <h4 class="date">11 April, 2020</h4>
+                <h2 class="title">Mobil-home </h2>
+                <span class="border-line"></span>
+                <p class="author">By Maria</p>
+            </div>
+        </a>
+    </div><!--news col-->
+    <div class="col-sm-6 text-center no-padding">
+        <a class="news-inner" href="post-single.html" style="background:url('static/images/camping/photo  (1).jpeg') no-repeat; background-size: cover;">
+            <div class="post-overlay"></div>
+            <div class="post-preview-content">
+                <h4 class="date">12 Juillet, 2021</h4>
+                <h2 class="title">Mobil-home </h2>
+                <span class="border-line"></span>
+                <p class="author">By joseph</p>
+            </div>
+        </a>
+    </div><!--news col-->
+    <div class="col-sm-6 text-center no-padding">
+        <a class="news-inner" href="post-single.html" src="'background:url('static/images/camping/photo  (11).jpeg') no-repeat; background-size: cover;">
+            <div class="post-overlay"></div>
+            <div class="post-preview-content">
+                <h4 class="date">2 Juin, 2021</h4>
+                <h2 class="title">Mobil-home </h2>
+                <span class="border-line"></span>
+                <p class="author">By Paul</p>
+            </div>
+        </a>
+    </div><!--news col-->
+    </div>
+</div>
+<div class="clearfix"></div>
+</section>news section end
+        <style>
+
+    
+            .pricing{
+              margin:40px 0px;
+            }
+            .pricing .table{
+              border-top:1px solid #ddd;
+              background:#fff;
+            }
+            .pricing .table th,
+            .pricing .table {
+              text-align: center;
+            }
+            .pricing .table th,
+            .pricing .table td {
+              padding: 20px 10px;
+              border:1px solid #ddd;
+              border: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            .pricing .table th {
+              width: 25%;
+              font-size: 30px;
+              font-weight: 400;
+              border-bottom: 0;
+              background:#2F313A;
+              color: #EBEDF3;
+              text-transform: uppercase;
+            }
+            .pricing .table th.highlight{
+              border-top: 4px solid #4caf50 !important;
+            }
+            .pricing .table tr:nth-child(odd){
+              background: #f0f8ff;
+            }
+            .pricing .table td:first-child{
+              padding-left: 20px;
+              text-align: left;
+              padding-top:35px;
+              background: #5F97FB;
+            }
+            .pricing tr td .ptable-title {
+              font-size: 22px;
+              font-weight:400;
+              color: #fff;
+            }
+            .pricing tr td .ptable-title i {
+              width: 23px;
+              line-height: 25px;
+              text-align: right;
+              margin-right: 5px;
+            }
+            .pricing .ptable-star {
+              position: relative;
+              display: block;
+              text-align: center;
+            }
+            .pricing .ptable-star.red{
+              color: #e91e63;
+            }
+            .pricing .ptable-star.green{
+              color: #4caf50;
+            }
+            .pricing .ptable-star.lblue{
+              color: #03a9f4;
+            }
+            .pricing .ptable-star i {
+              width: 8px;
+              font-size: 13px;
+            }
+            .pricing .ptable-price {
+              display: block;
+            }
+            .pricing tr td {
+              font-size: 16px;
+              line-height:32px;
+              text-transform:uppercase;
+            }
+            .pricing tr td.bg-red{
+              background: #e91e63;
+            }
+            .pricing tr td.bg-green{
+              background: #4caf50;
+            }
+            .pricing tr td.bg-lblue{
+              background: #03a9f4;
+            }
+            .pricing tr td.bg-red a,
+            .pricing tr td.bg-green a,
+            .pricing tr td.bg-lblue a{
+              color: #fff;
+            }
+            .pricing tr td i {
+              display: block;
+              margin-bottom: 12px;
+              font-size: 30px;
+            }
+            .pricing tr td i.red{
+              color: #e91e63;
+            }
+            .pricing tr td i.green{
+              color: #4caf50;
+            }
+            .pricing tr td i.lblue{
+              color: #03a9f4;
+            }
+            .pricing tr td:first-child i{
+              display:inline;
+              margin-bottom:0px;
+              font-size:22px;
+            }
+            
+            </style>
         <!--heading div-->
 
         <footer class="footer">
